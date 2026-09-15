@@ -1,0 +1,24 @@
+[project]
+name = "social-post-ai"
+version = "0.1.0"
+description = "Social Post AI is an AI-powered application for creating social-media content from multiple user workflows."
+readme = "README.md"
+authors = [
+    { name = "lookman-kc", email = "lookman@kodecreators.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
+
+[tool.uv.build-backend]
+module-name = "app"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

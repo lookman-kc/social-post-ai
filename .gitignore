@@ -1,0 +1,32 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build and packaging
+dist/
+build/
+*.egg-info/
+
+# Operating system & IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# AI agent instructions
+AGENTS.md
